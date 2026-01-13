@@ -1,0 +1,444 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "difficulty": "medium",
+            "category": "SQL Injection",
+            "question": {
+                "pt": "Qual é a melhor forma de prevenir SQL Injection em PHP?",
+                "en": "What is the best way to prevent SQL Injection in PHP?",
+                "es": "¿Cuál es la mejor forma de prevenir SQL Injection en PHP?",
+                "de": "Was ist der beste Weg, SQL Injection in PHP zu verhindern?"
+            },
+            "options": {
+                "pt": [
+                    "Escapar strings com addslashes()",
+                    "Usar prepared statements com PDO",
+                    "Validar apenas no front-end",
+                    "Limitar o tamanho do input"
+                ],
+                "en": [
+                    "Escape strings with addslashes()",
+                    "Use prepared statements with PDO",
+                    "Validate only on front-end",
+                    "Limit input size"
+                ],
+                "es": [
+                    "Escapar strings con addslashes()",
+                    "Usar prepared statements con PDO",
+                    "Validar solo en front-end",
+                    "Limitar el tamaño del input"
+                ],
+                "de": [
+                    "Strings mit addslashes() escapen",
+                    "Prepared Statements mit PDO verwenden",
+                    "Nur im Front-End validieren",
+                    "Eingabegröße begrenzen"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "Prepared statements separam a consulta SQL dos dados, tornando impossível a injeção de código malicioso.",
+                "en": "Prepared statements separate the SQL query from the data, making it impossible to inject malicious code.",
+                "es": "Los prepared statements separan la consulta SQL de los datos, haciendo imposible la inyección de código malicioso.",
+                "de": "Prepared Statements trennen die SQL-Abfrage von den Daten, was das Einschleusen von bösartigem Code unmöglich macht."
+            }
+        },
+        {
+            "id": 2,
+            "difficulty": "medium",
+            "category": "XSS",
+            "question": {
+                "pt": "O que é Cross-Site Scripting (XSS)?",
+                "en": "What is Cross-Site Scripting (XSS)?",
+                "es": "¿Qué es Cross-Site Scripting (XSS)?",
+                "de": "Was ist Cross-Site Scripting (XSS)?"
+            },
+            "options": {
+                "pt": [
+                    "Um ataque que rouba cookies do servidor",
+                    "Injeção de scripts maliciosos em páginas web",
+                    "Um tipo de ataque DDoS",
+                    "Ataque de força bruta em senhas"
+                ],
+                "en": [
+                    "An attack that steals server cookies",
+                    "Injection of malicious scripts into web pages",
+                    "A type of DDoS attack",
+                    "Brute force attack on passwords"
+                ],
+                "es": [
+                    "Un ataque que roba cookies del servidor",
+                    "Inyección de scripts maliciosos en páginas web",
+                    "Un tipo de ataque DDoS",
+                    "Ataque de fuerza bruta en contraseñas"
+                ],
+                "de": [
+                    "Ein Angriff, der Server-Cookies stiehlt",
+                    "Einschleusen bösartiger Skripte in Webseiten",
+                    "Eine Art DDoS-Angriff",
+                    "Brute-Force-Angriff auf Passwörter"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "XSS permite que atacantes injetem scripts no navegador de outros usuários, podendo roubar sessões, cookies e dados sensíveis.",
+                "en": "XSS allows attackers to inject scripts into other users' browsers, potentially stealing sessions, cookies, and sensitive data.",
+                "es": "XSS permite a los atacantes inyectar scripts en los navegadores de otros usuarios, pudiendo robar sesiones, cookies y datos sensibles.",
+                "de": "XSS ermöglicht es Angreifern, Skripte in die Browser anderer Benutzer einzuschleusen und möglicherweise Sitzungen, Cookies und sensible Daten zu stehlen."
+            }
+        },
+        {
+            "id": 3,
+            "difficulty": "hard",
+            "category": "CSRF",
+            "question": {
+                "pt": "Qual header HTTP ajuda a prevenir ataques CSRF?",
+                "en": "Which HTTP header helps prevent CSRF attacks?",
+                "es": "¿Qué header HTTP ayuda a prevenir ataques CSRF?",
+                "de": "Welcher HTTP-Header hilft, CSRF-Angriffe zu verhindern?"
+            },
+            "options": {
+                "pt": [
+                    "X-Frame-Options",
+                    "Content-Security-Policy",
+                    "SameSite Cookie Attribute",
+                    "X-XSS-Protection"
+                ],
+                "en": [
+                    "X-Frame-Options",
+                    "Content-Security-Policy",
+                    "SameSite Cookie Attribute",
+                    "X-XSS-Protection"
+                ],
+                "es": [
+                    "X-Frame-Options",
+                    "Content-Security-Policy",
+                    "SameSite Cookie Attribute",
+                    "X-XSS-Protection"
+                ],
+                "de": [
+                    "X-Frame-Options",
+                    "Content-Security-Policy",
+                    "SameSite Cookie Attribute",
+                    "X-XSS-Protection"
+                ]
+            },
+            "correct": 2,
+            "explanation": {
+                "pt": "O atributo SameSite em cookies impede que o navegador envie cookies em requisições cross-site, mitigando ataques CSRF.",
+                "en": "The SameSite attribute on cookies prevents the browser from sending cookies in cross-site requests, mitigating CSRF attacks.",
+                "es": "El atributo SameSite en cookies impide que el navegador envíe cookies en solicitudes cross-site, mitigando ataques CSRF.",
+                "de": "Das SameSite-Attribut bei Cookies verhindert, dass der Browser Cookies bei Cross-Site-Anfragen sendet, was CSRF-Angriffe abschwächt."
+            }
+        },
+        {
+            "id": 4,
+            "difficulty": "medium",
+            "category": "Hashing",
+            "question": {
+                "pt": "Qual algoritmo é recomendado para hash de senhas em PHP?",
+                "en": "Which algorithm is recommended for password hashing in PHP?",
+                "es": "¿Qué algoritmo se recomienda para hash de contraseñas en PHP?",
+                "de": "Welcher Algorithmus wird für das Passwort-Hashing in PHP empfohlen?"
+            },
+            "options": {
+                "pt": [
+                    "MD5",
+                    "SHA-1",
+                    "bcrypt (password_hash)",
+                    "SHA-256"
+                ],
+                "en": [
+                    "MD5",
+                    "SHA-1",
+                    "bcrypt (password_hash)",
+                    "SHA-256"
+                ],
+                "es": [
+                    "MD5",
+                    "SHA-1",
+                    "bcrypt (password_hash)",
+                    "SHA-256"
+                ],
+                "de": [
+                    "MD5",
+                    "SHA-1",
+                    "bcrypt (password_hash)",
+                    "SHA-256"
+                ]
+            },
+            "correct": 2,
+            "explanation": {
+                "pt": "bcrypt foi projetado especificamente para senhas, é lento por design e inclui salt automaticamente. Use password_hash() e password_verify() em PHP.",
+                "en": "bcrypt was specifically designed for passwords, is slow by design, and automatically includes salt. Use password_hash() and password_verify() in PHP.",
+                "es": "bcrypt fue diseñado específicamente para contraseñas, es lento por diseño e incluye salt automáticamente. Use password_hash() y password_verify() en PHP.",
+                "de": "bcrypt wurde speziell für Passwörter entwickelt, ist bewusst langsam und enthält automatisch Salt. Verwenden Sie password_hash() und password_verify() in PHP."
+            }
+        },
+        {
+            "id": 5,
+            "difficulty": "hard",
+            "category": "Headers",
+            "question": {
+                "pt": "O que o header Content-Security-Policy (CSP) faz?",
+                "en": "What does the Content-Security-Policy (CSP) header do?",
+                "es": "¿Qué hace el header Content-Security-Policy (CSP)?",
+                "de": "Was macht der Content-Security-Policy (CSP) Header?"
+            },
+            "options": {
+                "pt": [
+                    "Criptografa o conteúdo da página",
+                    "Define quais recursos podem ser carregados na página",
+                    "Bloqueia todos os scripts JavaScript",
+                    "Ativa o modo HTTPS forçado"
+                ],
+                "en": [
+                    "Encrypts the page content",
+                    "Defines which resources can be loaded on the page",
+                    "Blocks all JavaScript scripts",
+                    "Enables forced HTTPS mode"
+                ],
+                "es": [
+                    "Cifra el contenido de la página",
+                    "Define qué recursos pueden cargarse en la página",
+                    "Bloquea todos los scripts JavaScript",
+                    "Activa el modo HTTPS forzado"
+                ],
+                "de": [
+                    "Verschlüsselt den Seiteninhalt",
+                    "Definiert, welche Ressourcen auf der Seite geladen werden können",
+                    "Blockiert alle JavaScript-Skripte",
+                    "Aktiviert den erzwungenen HTTPS-Modus"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "CSP permite especificar de onde scripts, estilos, imagens e outros recursos podem ser carregados, prevenindo XSS e injeção de conteúdo.",
+                "en": "CSP allows you to specify where scripts, styles, images, and other resources can be loaded from, preventing XSS and content injection.",
+                "es": "CSP permite especificar de dónde pueden cargarse scripts, estilos, imágenes y otros recursos, previniendo XSS e inyección de contenido.",
+                "de": "CSP ermöglicht es, festzulegen, von wo Skripte, Stile, Bilder und andere Ressourcen geladen werden können, um XSS und Content-Injection zu verhindern."
+            }
+        },
+        {
+            "id": 6,
+            "difficulty": "medium",
+            "category": "Authentication",
+            "question": {
+                "pt": "O que é autenticação de dois fatores (2FA)?",
+                "en": "What is two-factor authentication (2FA)?",
+                "es": "¿Qué es la autenticación de dos factores (2FA)?",
+                "de": "Was ist Zwei-Faktor-Authentifizierung (2FA)?"
+            },
+            "options": {
+                "pt": [
+                    "Usar duas senhas diferentes",
+                    "Combinar algo que você sabe com algo que você tem",
+                    "Fazer login duas vezes",
+                    "Usar senha e pergunta secreta"
+                ],
+                "en": [
+                    "Using two different passwords",
+                    "Combining something you know with something you have",
+                    "Logging in twice",
+                    "Using password and security question"
+                ],
+                "es": [
+                    "Usar dos contraseñas diferentes",
+                    "Combinar algo que sabes con algo que tienes",
+                    "Iniciar sesión dos veces",
+                    "Usar contraseña y pregunta secreta"
+                ],
+                "de": [
+                    "Zwei verschiedene Passwörter verwenden",
+                    "Etwas, das Sie wissen, mit etwas kombinieren, das Sie haben",
+                    "Zweimal einloggen",
+                    "Passwort und Sicherheitsfrage verwenden"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "2FA combina dois fatores diferentes: conhecimento (senha), posse (celular/token) ou biometria, tornando muito mais difícil o acesso não autorizado.",
+                "en": "2FA combines two different factors: knowledge (password), possession (phone/token), or biometrics, making unauthorized access much more difficult.",
+                "es": "2FA combina dos factores diferentes: conocimiento (contraseña), posesión (celular/token) o biometría, haciendo mucho más difícil el acceso no autorizado.",
+                "de": "2FA kombiniert zwei verschiedene Faktoren: Wissen (Passwort), Besitz (Telefon/Token) oder Biometrie, was unbefugten Zugriff erheblich erschwert."
+            }
+        },
+        {
+            "id": 7,
+            "difficulty": "hard",
+            "category": "OWASP",
+            "question": {
+                "pt": "Qual vulnerabilidade está em primeiro lugar no OWASP Top 10 (2021)?",
+                "en": "Which vulnerability is ranked first in the OWASP Top 10 (2021)?",
+                "es": "¿Qué vulnerabilidad está en primer lugar en el OWASP Top 10 (2021)?",
+                "de": "Welche Schwachstelle steht an erster Stelle der OWASP Top 10 (2021)?"
+            },
+            "options": {
+                "pt": [
+                    "Injection",
+                    "Broken Access Control",
+                    "Cryptographic Failures",
+                    "Security Misconfiguration"
+                ],
+                "en": [
+                    "Injection",
+                    "Broken Access Control",
+                    "Cryptographic Failures",
+                    "Security Misconfiguration"
+                ],
+                "es": [
+                    "Injection",
+                    "Broken Access Control",
+                    "Cryptographic Failures",
+                    "Security Misconfiguration"
+                ],
+                "de": [
+                    "Injection",
+                    "Broken Access Control",
+                    "Cryptographic Failures",
+                    "Security Misconfiguration"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "Broken Access Control subiu para o 1º lugar em 2021, representando falhas onde usuários podem acessar recursos sem autorização adequada.",
+                "en": "Broken Access Control moved to 1st place in 2021, representing failures where users can access resources without proper authorization.",
+                "es": "Broken Access Control subió al 1er lugar en 2021, representando fallas donde los usuarios pueden acceder a recursos sin autorización adecuada.",
+                "de": "Broken Access Control stieg 2021 auf Platz 1 und repräsentiert Fehler, bei denen Benutzer ohne ordnungsgemäße Autorisierung auf Ressourcen zugreifen können."
+            }
+        },
+        {
+            "id": 8,
+            "difficulty": "medium",
+            "category": "Clickjacking",
+            "question": {
+                "pt": "Qual header previne ataques de Clickjacking?",
+                "en": "Which header prevents Clickjacking attacks?",
+                "es": "¿Qué header previene ataques de Clickjacking?",
+                "de": "Welcher Header verhindert Clickjacking-Angriffe?"
+            },
+            "options": {
+                "pt": [
+                    "X-Content-Type-Options",
+                    "X-Frame-Options",
+                    "X-XSS-Protection",
+                    "Strict-Transport-Security"
+                ],
+                "en": [
+                    "X-Content-Type-Options",
+                    "X-Frame-Options",
+                    "X-XSS-Protection",
+                    "Strict-Transport-Security"
+                ],
+                "es": [
+                    "X-Content-Type-Options",
+                    "X-Frame-Options",
+                    "X-XSS-Protection",
+                    "Strict-Transport-Security"
+                ],
+                "de": [
+                    "X-Content-Type-Options",
+                    "X-Frame-Options",
+                    "X-XSS-Protection",
+                    "Strict-Transport-Security"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "X-Frame-Options controla se a página pode ser carregada em frames/iframes. Use DENY ou SAMEORIGIN para prevenir clickjacking.",
+                "en": "X-Frame-Options controls whether the page can be loaded in frames/iframes. Use DENY or SAMEORIGIN to prevent clickjacking.",
+                "es": "X-Frame-Options controla si la página puede cargarse en frames/iframes. Use DENY o SAMEORIGIN para prevenir clickjacking.",
+                "de": "X-Frame-Options steuert, ob die Seite in Frames/iframes geladen werden kann. Verwenden Sie DENY oder SAMEORIGIN, um Clickjacking zu verhindern."
+            }
+        },
+        {
+            "id": 9,
+            "difficulty": "hard",
+            "category": "Injection",
+            "question": {
+                "pt": "Qual função PHP é INSEGURA para executar comandos do sistema?",
+                "en": "Which PHP function is INSECURE for executing system commands?",
+                "es": "¿Qué función PHP es INSEGURA para ejecutar comandos del sistema?",
+                "de": "Welche PHP-Funktion ist UNSICHER für die Ausführung von Systembefehlen?"
+            },
+            "options": {
+                "pt": [
+                    "escapeshellcmd() + exec()",
+                    "shell_exec() com input do usuário direto",
+                    "proc_open() com argumentos escapados",
+                    "passthru() com escapeshellarg()"
+                ],
+                "en": [
+                    "escapeshellcmd() + exec()",
+                    "shell_exec() with direct user input",
+                    "proc_open() with escaped arguments",
+                    "passthru() with escapeshellarg()"
+                ],
+                "es": [
+                    "escapeshellcmd() + exec()",
+                    "shell_exec() con input del usuario directo",
+                    "proc_open() con argumentos escapados",
+                    "passthru() con escapeshellarg()"
+                ],
+                "de": [
+                    "escapeshellcmd() + exec()",
+                    "shell_exec() mit direkter Benutzereingabe",
+                    "proc_open() mit escapierten Argumenten",
+                    "passthru() mit escapeshellarg()"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "Nunca passe input do usuário diretamente para funções de shell. Sempre use escapeshellarg() ou escapeshellcmd() para sanitizar.",
+                "en": "Never pass user input directly to shell functions. Always use escapeshellarg() or escapeshellcmd() to sanitize.",
+                "es": "Nunca pase input del usuario directamente a funciones de shell. Siempre use escapeshellarg() o escapeshellcmd() para sanitizar.",
+                "de": "Geben Sie Benutzereingaben niemals direkt an Shell-Funktionen weiter. Verwenden Sie immer escapeshellarg() oder escapeshellcmd() zur Bereinigung."
+            }
+        },
+        {
+            "id": 10,
+            "difficulty": "medium",
+            "category": "Sessions",
+            "question": {
+                "pt": "Como prevenir Session Hijacking?",
+                "en": "How to prevent Session Hijacking?",
+                "es": "¿Cómo prevenir Session Hijacking?",
+                "de": "Wie verhindert man Session Hijacking?"
+            },
+            "options": {
+                "pt": [
+                    "Usar session_id() exposto na URL",
+                    "Regenerar ID de sessão após login e usar HTTPS",
+                    "Nunca expirar sessões",
+                    "Armazenar senha na sessão"
+                ],
+                "en": [
+                    "Use session_id() exposed in URL",
+                    "Regenerate session ID after login and use HTTPS",
+                    "Never expire sessions",
+                    "Store password in session"
+                ],
+                "es": [
+                    "Usar session_id() expuesto en la URL",
+                    "Regenerar ID de sesión después del login y usar HTTPS",
+                    "Nunca expirar sesiones",
+                    "Almacenar contraseña en la sesión"
+                ],
+                "de": [
+                    "session_id() in der URL verwenden",
+                    "Session-ID nach dem Login regenerieren und HTTPS verwenden",
+                    "Sessions niemals ablaufen lassen",
+                    "Passwort in der Session speichern"
+                ]
+            },
+            "correct": 1,
+            "explanation": {
+                "pt": "Use session_regenerate_id() após login, HTTPS, cookies HttpOnly e Secure, e configure timeout adequado para sessões.",
+                "en": "Use session_regenerate_id() after login, HTTPS, HttpOnly and Secure cookies, and configure appropriate session timeout.",
+                "es": "Use session_regenerate_id() después del login, HTTPS, cookies HttpOnly y Secure, y configure timeout adecuado para sesiones.",
+                "de": "Verwenden Sie session_regenerate_id() nach dem Login, HTTPS, HttpOnly- und Secure-Cookies und konfigurieren Sie ein angemessenes Session-Timeout."
+            }
+        }
+    ]
+}
